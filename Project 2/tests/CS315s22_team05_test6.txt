@@ -1,0 +1,14 @@
+start
+_main(){
+ 	set S11 = {'1', '2', '3', '4'};
+	set S12 = {};
+	while( S11 >> S12){ 
+	element e = _pop(S11);
+		_print(e);
+	}
+ 	_add(S12, '22');
+	 if(_isEmpty(S12)){	 
+		_print("Set S12 is empty ");
+	}
+}
+end

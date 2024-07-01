@@ -1,0 +1,12 @@
+start
+_main(){
+	 set S1 = { '1' , '2', '3', 'a', 'aa' };
+   	set S2 = { '12' , '4', 'ss', 'a', 'ba' };
+   	set S3 = S1 or S2; 
+   	_print( S3 );
+   	_printFile("myFile", S3 ); 
+  	 del S1;
+   	del S2;
+	 del S3;
+}
+end

@@ -1,0 +1,53 @@
+
+Example Programs 
+
+---------- Example 1 ------------
+set S1;
+string fileName = "myFile";
+string empty = "set is empty";
+S1 = _readFile(empty);
+if( _isEmpty(S1) ) {
+	_print(empty);
+else {
+	_print(s1);
+}
+
+
+---------- Example 2------------
+
+set S1 = { '1' , '2', '3', 'a', 'aa' }; 
+set S2 = { '12' , '4', 'ss', 'a', 'ba' };
+set S3 = S1 or S2; 
+_print( S3 );
+_printFile("myFile", S3 );
+del S1;
+del S2;
+del S3;
+
+---------- Example 3 ------------
+
+function  _f1(set S1, element el) {
+	_remove( S1, el );
+	return S1;
+};
+Set S1;
+string fileName = "myFile";
+element el = 'aa';
+S1 = _readFile(fileName);
+S1 = _f1(S1, el);
+_print(S1);
+
+
+---------- Example 4 ------------ 
+
+ set S12;
+ int count = 0;
+ while(count < 5) {
+	element el;
+ _read(el);
+	_add(S12, el);
+} 
+_print("Set S12 : ");
+_print(S12);
+_print( "Set size : ");
+_print(_getSize(S12));

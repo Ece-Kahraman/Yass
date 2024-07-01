@@ -1,0 +1,13 @@
+start
+function  _f1(set S1, element el) {
+	_remove( S1, el );
+	return S1;
+};
+_main(){
+	set S1;
+	element el = 'aa';
+	S1 = _readFile("myFile");
+	S1 = _f1(S1, el);
+	_print(S1);
+}
+end

@@ -1,0 +1,15 @@
+start
+_main(){
+ 	set S1;
+   	string empty = "set is empty";
+   	S1 = _readFile("myFile");
+	bool b1 = true;
+   	if( b1) {
+        	     	_print(empty);
+	}
+   	else {
+        		_print(s1);
+  	 }
+	 del S1;
+}
+end

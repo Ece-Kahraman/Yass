@@ -1,0 +1,16 @@
+start
+_main(){
+ 	set S12;
+ 	int count = 0;
+ 	while(count < 5) {
+		element el;
+ 		_read(el);
+		_add(S12, el);
+	}	 
+	_print("Set S12 : ");
+	_print(S12);
+	_print( "Set size : ");
+	int size = _getSize(S12);
+	_print(size);
+}
+end

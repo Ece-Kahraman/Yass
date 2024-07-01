@@ -1,0 +1,20 @@
+start
+function _create(element e1, element e2, element e3){
+	set S1;
+	_add(S1, e1);
+	_add(S1, e2);
+	_add(S1, e3);
+	return S1;
+};
+_main(){
+ 	set S12;
+ 	element e1 = 'aa';
+	 element e2 = 'bb';
+	 element e3 = 'cc';
+	S12 = _create(e1, e2, e3);
+	_print(S12);
+	 if(_isEmpty(S12)){	 
+		_print("Set S12 is empty ");
+	}	
+}
+end
